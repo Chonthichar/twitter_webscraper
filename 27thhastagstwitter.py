@@ -62,7 +62,6 @@ print("Joined on\t: " + join_date)
 print("Following count\t: " + following_count)
 print("Followers count\t: " + followers_count)
 
-# ... (previous code)
 
 # initialize empty lists to store scraped data
 UserTags = []
@@ -122,7 +121,6 @@ while tweet_count < 50:  # Loop until 50 tweets are scraped
     if len(unique_tweets) >= 50:
         break  # exit loop if 50 tweets have been scraped
 
-# ... (rest of the code)
 
 
 # print the first tweet information
