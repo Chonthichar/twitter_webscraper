@@ -36,8 +36,7 @@ URL = "https://twitter.com/" + username + "?lang=en"
 driver.get(URL)
 
 # wait for the webpage to be loaded
-# PS: this considers a profile page to be loaded when at least one tweet has been loaded
-#     it might not work well for restricted profiles or public profiles with zero tweets
+
 try:
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, '[data-testid="primaryColumn"]')))
 except WebDriverException:
